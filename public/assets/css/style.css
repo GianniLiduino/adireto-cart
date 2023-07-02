@@ -1,0 +1,416 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.btn {
+    font-weight: 600;
+}
+
+.cart span {
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.cart i {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.cart-image {
+    max-width: 120px;
+}
+
+.image-profile {
+    max-width: 30px;
+    cursor: pointer;
+}
+
+#section-login {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#section-register {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* button {
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #6be210;
+}
+
+header {
+    min-width: 100%;
+}
+
+header .container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 50px;
+}
+
+.container-login {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-login .row-errors {
+    width: 17%;
+    background-color: #ff6f6f;
+    border: #913939 1px solid;
+    margin-bottom: 20px;
+}
+
+.container-login .row-errors ul {
+    padding: 5px;
+}
+
+.container-login .row-login {
+    width: 17%;
+    height: 50%;
+}
+
+.container-login .row-login .login-footer {
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-login .row-login #login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-login .row-login #login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-login .row-login #login-form label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+#sectionProducts {
+    width: 100vw;
+    max-width: 100vw;
+    margin-top: 10%;
+}
+
+.product-img {
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.card-product {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px 5px;
+}
+
+.w-50 {
+    width: 50%;
+    max-width: 50%;
+}
+
+.btn {
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+.cart-icon,
+.btn-image-profile,
+.btn {
+    margin: 5px;
+}
+
+.image-profile {
+    max-width: 25px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-icon i {
+    font-size: 1.4rem;
+}
+
+.cart-icon .cart-quantity {
+    position: absolute;
+    background-color: rgb(255, 34, 34);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 1px 6px;
+    border-radius: 50%;
+    left: 12px;
+}
+
+.btn.btn-register {
+    font-size: 1rem;
+    padding: 8px;
+    cursor: pointer;
+    background-color: white;
+    border: #6be210 2px solid;
+    color: #6be210;
+}
+
+.btn.btn-register:hover {
+    font-size: 1rem;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #6be210;
+    color: white;
+}
+
+.btn.btn-danger {
+    border: #f32525 2px solid;
+    border-radius: 2px;
+    color: #f32525;
+}
+
+.btn.btn-danger:hover {
+    background-color: #f32525;
+    color: white;
+}
+
+.btn.btn-success {
+    border: #6be210 2px solid;
+    border-radius: 2px;
+    color: #6be210;
+}
+
+.btn.btn-success:hover {
+    background-color: #6be210;
+    color: white;
+}
+
+.container {
+    min-width: 1320px;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.row-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+}
+
+.cart-img {
+    max-width: 110px;
+    padding: 10px 0;
+}
+
+.form-control {
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: black 1px solid;
+    margin-bottom: 7px;
+}
+
+#sectionCart {
+    width: 100vw;
+    max-width: 100vw;
+    margin-top: 10%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+.row-products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    height: 50px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+/* .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    margin: 10px;
+}
+
+.cart-icon,
+.btn-image-profile,
+.btn {
+    margin: 5px;
+}
+
+.row-products {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.card-product {
+    border: 1px solid #cccccc;
+}
+
+.product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    height: 50px;
+}
+
+.card-text {
+    height: 100px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 575px) {
+    .row-products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .row-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .row-products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .row-products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .row-products {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding: 10px;
+        font-weight: bold;
+    }
+} */
